@@ -363,18 +363,23 @@ document.write("<hr>");
 //conditionals
 //ternary shorthand
 
-display = (c1 = c2)? true:false
+display = (10 == c2)? true:false
 document.write(display);
 document.write("<hr>");
 
 //if statement
-mycolor ="green";
-if((mycolor == "red")||(mycolor == "blue") ){
-   document.write(mycolor + "is my favorite color:");else if (mycolor == "yellow")
-   document.write(mycolor + "is my least favorite color");
-}size {
-   document.write("<hr>");
-}
+myColor = "Red";
+if((myColor == 'Red') || (myColor == 'Blue')){
+      document.write(myColor + " is my favorite color! ");
+   }else if(myColor == 'Yellow'){
+      document.write(myColor + " is my least color! ");
+   }else{
+      document.write(myColor + " is not my favorite color! ");
+   }
+   document.write("<hr>")
+
+
+
 
 
 //switch statement
@@ -384,7 +389,7 @@ switch(mycolor){
    document.write(mycolor +" is my favorite color!");
       break;
    
-   case:'yellow':
+   case'yellow' :
       document.write(mycolor +" is my least favorite color");
        break;
    defult:
