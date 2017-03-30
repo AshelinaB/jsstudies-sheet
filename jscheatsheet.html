@@ -210,12 +210,188 @@ arr2 =['mommy', 'granny'];
 document.write(arr.concat(arr2));
 document.write("<hr>");
 
-arr3 =arr.slice(0,2)
+arr3 =arr.slice(0,2);
+document.write
+
+
+//sorting numbers
+points=[40,100,1,5,25,10]
+document.write(points.sort());
+document.write("<hr>")
+
+//sort numbers correctly
+document.write(points.sort(function(a,b){
+   //document.write((a+' '+b+'=')+);
+   return a-b;
+
+}));
+document.write("<hr>")
 
 
 
+//multidimensional arrays
+instruments = ['guitar','drums','bass'];
+genre =[ 'rock','hip hop', 'classical'];
+document.write(instruments);
+document.write("<hr>");
+document.write(genre);
+document.write("<hr>");
 
+musichobbies = [instruments,genre];
+document.write(musichobbies);
+document.write("<hr>");
+document.write(musichobbies[1][2]);
+document.write("<hr>");
+
+
+//object example
+
+superhero ={
+   fname:'Clark',
+   lname:'Kent',
+   hname:'Super-man',
+   glasses: false,
+   powers:12,
+   weakness:2,
+};
+
+document.write(superhero['hname']);
+document.write("<hr>");
+document.write(superhero.lname);
+document.write("<hr>");
+
+//object- archie/riverdale
+resident ={
+   firstn:'Veronica',
+   lastn:'Lodge',
+   haircolor: 'brunette',
+
+
+   fname:'Betty',
+  lname:'Cooper',
+   haircolor: 'blonde',
+
+}
+
+   document.write(resident['firstn']);
+   document.write("<hr>");
+   document.write(resident.firstn);
+   document.write("<hr>");
+
+    document.write(resident['lname']);
+   document.write("<hr>");
+   document.write(resident.lname);
+   document.write("<hr>");
+
+
+celeb = { 
+   firstn:"Lady",
+   lastn:"Gaga",  
+   specialty: "imitating madonna",
+   fullname: function(){
+         return this.firstn + " " + this.lastn;
+   }
+};
+
+celeb['genre'] + 'pop';
+celeb['tophits'] + 2;
+celeb ['tophits']+ 20;
+
+document.write(celeb.fullname());
+document.write("<hr>");
+
+document.write(celeb.fullname);
+document.write("<hr>");
+
+
+person = {
+   firstname:"Jet",
+   lastname: "Li",
+   age: "53",
+   nationality: "chinese",
+ 
+}
+document.write(person['age']);
+document.write("<hr>");
+document.write(person.age);
+document.write("<hr>");
+
+
+
+//comparisons
+
+document.write("5 is equal to 10:");
+document.write(5 == 10);
+document.write("<hr>");
+
+document.write("5 is equal to 5:");
+document.write(5==5);
+document.write("<hr>");
+
+document.write("5 is less than to 10:");
+document.write(5<10);
+document.write("<hr>");
+
+document.write("5 is less than  or equal to 10:");
+document.write(5<=10);
+document.write("<hr>");
+
+document.write("5 is greater than  or equal to 10:");
+document.write(5>=10);
+document.write("<hr>");
+
+
+
+//logical operators
+
+c1 = 5;
+c2 = 10;
+ document.write( "5 is less than 10");
+ document.write("and 5 is greater than 0:");
+ document.write((c1 < 10 ))
+
+ document.write( "5 is less than 10");
+ document.write("and 5 is greater than 0:");
+ document.write((c1 < 10 ));
+ document.write("<hr>");
+
+
+ document.write( "5 is Not equal to 10");
+ document.write("or 5 is Not less than 0:");
+ document.write(!((c1 == 10 )&& (c1< 0)));
+document.write("<hr>"); 
+//conditionals
+//ternary shorthand
+
+display = (c1 = c2)? true:false
+document.write(display);
+document.write("<hr>");
+
+//if statement
+mycolor ="green";
+if((mycolor == "red")||(mycolor == "blue") ){
+   document.write(mycolor + "is my favorite color:");else if (mycolor == "yellow")
+   document.write(mycolor + "is my least favorite color");
+}size {
+   document.write("<hr>");
+}
+
+
+//switch statement
+switch(mycolor){
+   case'red':
+   case'blue':
+   document.write(mycolor +" is my favorite color!");
+      break;
+   
+   case:'yellow':
+      document.write(mycolor +" is my least favorite color");
+       break;
+   defult:
+      document.write(mycolor + "is not my favorite color!");
+}
 </script>
+
 
 </body>
 </html>
