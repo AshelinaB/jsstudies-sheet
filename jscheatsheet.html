@@ -8,7 +8,7 @@
 	//this is a comment
 	/* multi line comment*/
 
-	alert("Hello World");
+	//alert("Hello World");
    console.log("HiBob!");
    document.write("<h1> this renders as html</h1>");
 
@@ -368,7 +368,7 @@ document.write(display);
 document.write("<hr>");
 
 //if statement
-myColor = "Red";
+myColor = "green";
 if((myColor == 'Red') || (myColor == 'Blue')){
       document.write(myColor + " is my favorite color! ");
    }else if(myColor == 'Yellow'){
@@ -383,18 +383,92 @@ if((myColor == 'Red') || (myColor == 'Blue')){
 
 
 //switch statement
-switch(mycolor){
+switch(myColor){
    case'red':
    case'blue':
-   document.write(mycolor +" is my favorite color!");
+   document.write(myColor +" is my favorite color!");
       break;
    
    case'yellow' :
-      document.write(mycolor +" is my least favorite color");
+      document.write(myColor +" is my least favorite color");
        break;
    defult:
-      document.write(mycolor + "is not my favorite color!");
+      document.write(myColor + "is not my favorite color!");
 }
+
+//this is a function
+function playfunc(){
+      var jim = 100;
+   var joe =  10;
+   document.write('lets add things together');
+   document.write(jim + joe);
+};
+
+playfunc();
+
+document.write("<hr>");
+
+function sum10(n1,n2){
+   return (n1 +n2)*10;
+};
+document.write(sum10(5,5));
+document.write("<hr>");
+  
+//function expression
+exFunc = function(p1){
+   document.write(p1 * 10);
+};
+
+exFunc(2);
+document.write("<hr>");
+
+//self envoked
+(function(){
+   document.write('this executed without a call');
+})();
+
+//this refers to an instance
+function myfunction(){
+         return this;
+};
+console.log(myfunction());
+
+//loops
+document.write("<hr>");
+document.write('<b> loops execute a set amount of times </b>')
+for(var i=0; i<10; ++i){
+   document.write(i + '<br>')
+};
+
+beers =['corona','modelo', 'heineken', 'bud'];
+for (var i = 0; i < beers.length; ++i){
+   document.write(i + beers[1]+'<br>');
+}
+
+//while loop
+   var bi = 0;
+   while(bi < beers.length){
+      document.write(bi + beers[bi] +'<br>');
+   ++bi;
+}
+
+//do while loop
+
+person = {
+   fname:'john',
+   lname:'doe',
+   id:1234
+};
+
+document.write('for in loop example');
+objKeyVal='';
+for(key in person){
+   objKeyVal
+
+
+}
+
+
 </script>
 
 
